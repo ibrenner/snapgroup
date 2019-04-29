@@ -11,12 +11,13 @@ the file content should be as follows:
 ibox ibox_name
 user ibox_username
 password ibox_password
+snaps_num amount_of_snaps_to_keep
 ```
 password value should be encrypted using base64
 
 ## Usage
 ```
-usage: snapgroup_v2.py [-h] -o {create,query,delete,restore} [-n NAME] -c
+usage: snapgroup_v7.py [-h] -o {create,query,delete,restore} [-n NAME] -c
                        CREDFILE [-v VOLUMES [VOLUMES ...]]
 
 Script for managing snap groups.
