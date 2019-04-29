@@ -36,7 +36,7 @@ def get_version():
     return 'SNAPSHOT'
 
 def setup_logger():
-    file="./misc/{}.log".format(strftime("%Y-%m-%d_%H%M%S"))
+    file="./logs/{}.log".format(strftime("%Y-%m-%d_%H%M%S"))
     logging.basicConfig(format='%(asctime)s %(message)s',filename=file,level=logging.INFO)
     logging.info("Started")
 
